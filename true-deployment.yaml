@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: geet-hello-world
+  namespace: geet
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      geet: hello
+  template:
+    metadata:
+      labels:
+        geet: hello
+    spec:
+      containers:
+        - name: geet-hello-world
+          image: geetmanghnani/geet-hello-world:v2
+          env: 
+            - name: OFFER
+              value: "ENABLED"
