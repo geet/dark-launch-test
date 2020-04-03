@@ -1,0 +1,8 @@
+apiVersion: deploy.razee.io/v1alpha1
+kind: FeatureFlagSetLD
+metadata:
+  name: feature-offer
+  namespace: default
+spec:
+  sdk-key: "sdk-390da12b-648a-4dd5-b3d2-9dad171f345f"
+

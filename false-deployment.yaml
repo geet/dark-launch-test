@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: geet-hello-world
-          image: geetmanghnani/geet-hello-world:v2
+          image: geetmanghnani/geet-hello-world:v3
           env: 
             - name: OFFER
               value: "DISABLED"
